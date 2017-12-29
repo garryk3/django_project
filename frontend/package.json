@@ -17,6 +17,7 @@
     "glob": "^7.1.2",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
+    "vuetify": "^0.17.6",
     "websocket-driver": "^0.7.0"
   },
   "devDependencies": {

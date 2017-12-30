@@ -1,21 +1,17 @@
 <template>
   <div class="home">
-    <v-header></v-header>
     <v-app light>
-      <v-toolbar class="white">
-      <v-toolbar-title v-text="title"></v-toolbar-title>
-    </v-toolbar>
-      <main>
-        <v-content>
+        <v-header-c></v-header-c>
+      <v-content>
           <section>
-          <v-parallax src="img/hero.jpeg" height="600">
+          <v-parallax src="static/img/parallax_1.jpg" height="600">
             <v-layout
               column
               align-center
               justify-center
               class="white--text"
             >
-              <img src="img/vuetify.png" alt="Vuetify.js" height="200">
+              <img src="static/img/vuetify.png" alt="Vuetify.js" height="200">
               <h1 class="white--text mb-2 display-1 text-xs-center">Parallax Template</h1>
               <div class="subheading mb-3 text-xs-center">Powered by Vuetify</div>
               <v-btn
@@ -24,7 +20,7 @@
                 large
                 href="/pre-made-themes"
               >
-                Get Started
+                Смотреть
               </v-btn>
             </v-layout>
           </v-parallax>
@@ -100,7 +96,7 @@
         </section>
 
           <section>
-          <v-parallax src="img/section.jpg" height="380">
+          <v-parallax src="static/img/section.jpg" height="380">
             <v-layout column align-center justify-center>
               <div class="headline white--text mb-3 text-xs-center">Web development has never been easier</div>
               <em>Kick-start your application today</em>
@@ -172,21 +168,10 @@
         </section>
 
           <v-footer class="blue darken-2">
-          <v-layout row wrap align-center>
-            <v-flex xs12>
-              <div class="white--text ml-3">
-                Made with
-                <v-icon class="red--text">favorite</v-icon>
-                by <a class="white--text" href="https://vuetifyjs.com" target="_blank">Vuetify</a>
-                and <a class="white--text" href="https://github.com/vwxyzjn">Costa Huang</a>
-              </div>
-            </v-flex>
-          </v-layout>
+            <v-footer-c>nn</v-footer-c>
         </v-footer>
       </v-content>
-      </main>
     </v-app>
-    <v-footer>nn</v-footer>
   </div>
 </template>
 
@@ -202,8 +187,8 @@
       }
     },
     components: {
-      'v-header': Header,
-      'v-footer': Footer
+      'v-header-c': Header,
+      'v-footer-c': Footer
     }
   }
 </script>

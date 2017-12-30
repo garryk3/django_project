@@ -1,17 +1,17 @@
 <template>
   <div class="home">
     <v-app light>
-        <v-header-c></v-header-c>
+        <dj-header></dj-header>
       <v-content>
           <section>
-          <v-parallax src="static/img/parallax_1.jpg" height="600">
+          <v-parallax :src="img1" height="600">
             <v-layout
               column
               align-center
               justify-center
               class="white--text"
             >
-              <img src="static/img/vuetify.png" alt="Vuetify.js" height="200">
+              <img :src="img3" alt="Vuetify.js" height="200">
               <h1 class="white--text mb-2 display-1 text-xs-center">Parallax Template</h1>
               <div class="subheading mb-3 text-xs-center">Powered by Vuetify</div>
               <v-btn
@@ -96,7 +96,7 @@
         </section>
 
           <section>
-          <v-parallax src="static/img/section.jpg" height="380">
+          <v-parallax :src="img2" height="380">
             <v-layout column align-center justify-center>
               <div class="headline white--text mb-3 text-xs-center">Web development has never been easier</div>
               <em>Kick-start your application today</em>
@@ -106,7 +106,7 @@
                 large
                 href="/pre-made-themes"
               >
-                Get Started
+                Смотреть
               </v-btn>
             </v-layout>
           </v-parallax>
@@ -118,7 +118,7 @@
               <v-flex xs12 sm4>
                 <v-card class="elevation-0 transparent">
                   <v-card-title primary-title class="layout justify-center">
-                    <div class="headline">Company info</div>
+                    <div class="headline">Обо мне</div>
                   </v-card-title>
                   <v-card-text>
                     Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare.
@@ -130,7 +130,7 @@
               <v-flex xs12 sm4 offset-sm1>
                 <v-card class="elevation-0 transparent">
                   <v-card-title primary-title class="layout justify-center">
-                    <div class="headline">Contact us</div>
+                    <div class="headline" id="contacts">Контакты</div>
                   </v-card-title>
                   <v-card-text>
                     Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare.
@@ -138,26 +138,10 @@
                   <v-list class="transparent">
                     <v-list-tile>
                       <v-list-tile-action>
-                        <v-icon class="blue--text text--lighten-2">phone</v-icon>
-                      </v-list-tile-action>
-                      <v-list-tile-content>
-                        <v-list-tile-title>777-867-5309</v-list-tile-title>
-                      </v-list-tile-content>
-                    </v-list-tile>
-                    <v-list-tile>
-                      <v-list-tile-action>
-                        <v-icon class="blue--text text--lighten-2">place</v-icon>
-                      </v-list-tile-action>
-                      <v-list-tile-content>
-                        <v-list-tile-title>Chicago, US</v-list-tile-title>
-                      </v-list-tile-content>
-                    </v-list-tile>
-                    <v-list-tile>
-                      <v-list-tile-action>
                         <v-icon class="blue--text text--lighten-2">email</v-icon>
                       </v-list-tile-action>
                       <v-list-tile-content>
-                        <v-list-tile-title>john@vuetifyjs.com</v-list-tile-title>
+                        <v-list-tile-title>mila.golubeva81@mail.ru</v-list-tile-title>
                       </v-list-tile-content>
                     </v-list-tile>
                   </v-list>
@@ -168,7 +152,7 @@
         </section>
 
           <v-footer class="blue darken-2">
-            <v-footer-c>nn</v-footer-c>
+            <dj-footer>nn</dj-footer>
         </v-footer>
       </v-content>
     </v-app>
@@ -179,16 +163,23 @@
   import Header from '@/components/blocks/header/Header'
   import Footer from '@/components/blocks/footer/Footer'
 
+  import img1 from '@/components/pages/home/img/parallax_1.jpg'
+  import img2 from '@/components/pages/home/img/parallax_2.jpg'
+  import img3 from '@/components/pages/home/img/village.svg'
+
   export default {
     name: 'home',
     data () {
       return {
-        title: 'Your Logo'
+        title: 'Your Logo',
+        img1: img1,
+        img2: img2,
+        img3: img3
       }
     },
     components: {
-      'v-header-c': Header,
-      'v-footer-c': Footer
+      'dj-header': Header,
+      'dj-footer': Footer
     }
   }
 </script>

@@ -8,8 +8,9 @@
     <v-toolbar-side-icon class="hidden-md-and-up"></v-toolbar-side-icon>
     <v-toolbar-items class="hidden-sm-and-down">
       <v-btn flat>Проекты</v-btn>
-      <v-btn flat>Статьи</v-btn>
-      <v-btn flat>Контакты</v-btn>
+      <v-btn flat>Творчество</v-btn>
+      <v-btn flat>Галерея</v-btn>
+      <v-btn href="#contacts" flat>Контакты</v-btn>
     </v-toolbar-items>
   </v-toolbar>
     </v-flex>
@@ -19,7 +20,7 @@
 
 <script>
     export default {
-      name: 'v-header-c'
+      name: 'dj-header'
     }
 </script>
 

@@ -4,7 +4,7 @@
 
 <script>
     export default {
-      name: 'v-footer-c'
+      name: 'dj-footer'
     }
 </script>
 

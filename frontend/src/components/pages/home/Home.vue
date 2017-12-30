@@ -150,10 +150,7 @@
             </v-layout>
           </v-container>
         </section>
-
-          <v-footer class="blue darken-2">
-            <dj-footer>nn</dj-footer>
-        </v-footer>
+        <dj-footer></dj-footer>
       </v-content>
     </v-app>
   </div>

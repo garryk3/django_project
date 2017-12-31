@@ -10,6 +10,20 @@
       </v-parallax>
       <v-container>
         <v-layout>
+          <v-breadcrumbs divider="/">
+            <v-breadcrumbs-item
+              v-for="item in items"
+              :key="item.text"
+              :disabled="item.disabled"
+              :to="item.path"
+              :append="true"
+              active-class=""
+            >
+              {{ item.text }}
+            </v-breadcrumbs-item>
+          </v-breadcrumbs>
+        </v-layout>
+        <v-layout>
           <v-flex xs12 class="project__content">
             <p>
               Lorem ipsum dolor sit amet, brute iriure accusata ne mea. Eos suavitate referrentur ad, te duo agam libris qualisque, utroque quaestio accommodare no qui. Et percipit laboramus usu, no invidunt verterem nominati mel. Dolorem ancillae an mei, ut putant invenire splendide mel, ea nec propriae adipisci. Ignota salutandi accusamus in sed, et per malis fuisset, qui id ludus appareat.
@@ -35,7 +49,23 @@
     name: 'dj-project',
     data () {
       return {
-        img1: img1
+        img1: img1,
+        items: [
+          {
+            text: 'Главная',
+            disabled: false,
+            path: '/'
+          },
+          {
+            text: 'Проекты',
+            disabled: false,
+            path: '/projects'
+          },
+          {
+            text: 'Link 2',
+            disabled: true
+          }
+        ]
       }
     },
     components: {

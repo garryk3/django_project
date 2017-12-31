@@ -6,7 +6,7 @@
     <v-toolbar-items class="hidden-sm-and-down">
       <v-btn flat to="/projects">Проекты</v-btn>
       <v-btn flat>Творчество</v-btn>
-      <v-btn flat>Галерея</v-btn>
+      <v-btn flat to="/gallery">Галерея</v-btn>
       <v-btn to="/#contacts" flat>Контакты</v-btn>
     </v-toolbar-items>
   </v-toolbar>

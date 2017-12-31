@@ -16,7 +16,6 @@
               :key="item.text"
               :disabled="item.disabled"
               :to="item.path"
-              :append="true"
               active-class=""
             >
               {{ item.text }}
@@ -36,6 +35,7 @@
           </v-flex>
         </v-layout>
       </v-container>
+      <dj-content-preview></dj-content-preview>
       <dj-footer></dj-footer>
     </v-app>
 </template>
@@ -44,6 +44,7 @@
   import VueGallery from 'vue-gallery'
   import Header from '@/components/blocks/header/Header'
   import Footer from '@/components/blocks/footer/Footer'
+  import ContentPreview from '@/components/blocks/content-preview/ContentPreview'
 
   import img1 from '@/components/pages/project/img/vbanner.jpg'
 
@@ -80,7 +81,8 @@
     components: {
       'dj-header': Header,
       'dj-footer': Footer,
-      'gallery': VueGallery
+      'gallery': VueGallery,
+      'dj-content-preview': ContentPreview
     }
   }
 </script>
@@ -91,7 +93,9 @@
       height: 200px
       box-sizing border-box
       background-position 50% 50%
+      background-size cover
       border 5px solid #fff
+      cursor pointer
     }
     &__content {
       padding: 15px 0 40px

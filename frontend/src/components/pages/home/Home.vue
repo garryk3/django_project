@@ -112,9 +112,9 @@
           </v-parallax>
         </section>
 
-          <section>
+        <section>
           <v-container grid-list-xl>
-            <v-layout row wrap justify-center class="my-5">
+            <v-layout row wrap justify-center>
               <v-flex xs12 sm4>
                 <v-card class="elevation-0 transparent">
                   <v-card-title primary-title class="layout justify-center">
@@ -150,6 +150,9 @@
             </v-layout>
           </v-container>
         </section>
+        <section>
+          <dj-content-preview></dj-content-preview>
+        </section>
         <dj-footer></dj-footer>
       </v-content>
     </v-app>
@@ -159,6 +162,7 @@
 <script>
   import Header from '@/components/blocks/header/Header'
   import Footer from '@/components/blocks/footer/Footer'
+  import ContentPreview from '@/components/blocks/content-preview/ContentPreview'
 
   import img1 from '@/components/pages/home/img/parallax_1.jpg'
   import img2 from '@/components/pages/home/img/parallax_2.jpg'
@@ -176,7 +180,8 @@
     },
     components: {
       'dj-header': Header,
-      'dj-footer': Footer
+      'dj-footer': Footer,
+      'dj-content-preview': ContentPreview
     }
   }
 </script>

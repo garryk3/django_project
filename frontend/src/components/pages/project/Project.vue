@@ -16,7 +16,6 @@
               :key="item.text"
               :disabled="item.disabled"
               :to="item.path"
-              :append="true"
               active-class=""
             >
               {{ item.text }}
@@ -35,6 +34,7 @@
           </v-flex>
         </v-layout>
       </v-container>
+      <dj-content-preview></dj-content-preview>
       <dj-footer></dj-footer>
     </v-app>
 </template>
@@ -42,6 +42,7 @@
 <script>
   import Header from '@/components/blocks/header/Header'
   import Footer from '@/components/blocks/footer/Footer'
+  import ContentPreview from '@/components/blocks/content-preview/ContentPreview'
 
   import img1 from '@/components/pages/project/img/vbanner.jpg'
 
@@ -70,7 +71,8 @@
     },
     components: {
       'dj-header': Header,
-      'dj-footer': Footer
+      'dj-footer': Footer,
+      'dj-content-preview': ContentPreview
     }
   }
 </script>

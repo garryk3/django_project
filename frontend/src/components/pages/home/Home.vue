@@ -18,7 +18,7 @@
                 class="blue lighten-2 mt-5"
                 dark
                 large
-                href="/pre-made-themes"
+                to="/pre-made-themes"
               >
                 Смотреть
               </v-btn>
@@ -104,7 +104,7 @@
                 class="blue lighten-2 mt-5"
                 dark
                 large
-                href="/pre-made-themes"
+                to="/pre-made-themes"
               >
                 Смотреть
               </v-btn>

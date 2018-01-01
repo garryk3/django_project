@@ -16,7 +16,6 @@ export default new Router({
     if (to.hash) {
       return {
         selector: to.hash
-        // , offset: { x: 0, y: 10 }
       }
     }
     if (savedPosition) {
